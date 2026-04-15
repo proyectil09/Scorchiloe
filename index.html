@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScortChiloe | Directorio</title>
+    <style>
+        /* Configuración General */
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Título Principal */
+        header {
+            padding: 40px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ff007f; /* Rosado Brillante */
+            font-size: 3.5rem;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            text-shadow: 0 0 10px #ff007f, 0 0 20px #ff007f;
+            margin-bottom: 10px;
+        }
+
+        /* Contenedor de Apartados/Botones */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            width: 90%;
+            max-width: 1000px;
+            margin-top: 30px;
+        }
+
+        .city-card {
+            background: #1a1a1a;
+            border: 2px solid #ff007f;
+            padding: 20px;
+            text-align: center;
+            border-radius: 15px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ff007f;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+        }
+
+        .city-card:hover {
+            background: #ff007f;
+            color: #000;
+            box-shadow: 0 0 20px #ff007f;
+            transform: scale(1.05);
+        }
+
+        /* Sección de Contacto y Animación */
+        .contact-section {
+            margin-top: 60px;
+            text-align: center;
+            padding-bottom: 50px;
+        }
+
+        .phone-number {
+            display: inline-block;
+            font-size: 2.5rem;
+            color: #00ffcc; /* Un color turquesa para que resalte del rosado */
+            font-weight: bold;
+            text-decoration: none;
+            margin-top: 15px;
+            /* Animación */
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            40% {transform: translateY(-15px);}
+            60% {transform: translateY(-7px);}
+        }
+
+        .whatsapp-btn {
+            color: white;
+            font-size: 1.2rem;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>ScortChiloe</h1>
+        <p>Selecciona tu ciudad</p>
+    </header>
+
+    <div class="grid-container">
+        <div class="city-card">Castro</div>
+        <div class="city-card">Chonchi</div>
+        <div class="city-card">Dalcahue</div>
+        <div class="city-card">Ancud</div>
+        <div class="city-card">Puerto Montt</div>
+    </div>
+
+    <div class="contact-section">
+        <span class="whatsapp-btn">Contacto Directo:</span>
+        <a href="https://wa.me/56945828695" class="phone-number">
+            +569 4582 8695
+        </a>
+    </div>
+
+</body>
+</html>
